@@ -1,0 +1,58 @@
+{
+	"version": 1,
+	"processes": [
+		{
+			"name": "capsule_nwb_packaging_subject_capsule_2",
+			"capsule": {
+				"id": "bdc9f09f-0005-4d09-aaf9-7e82abd93f19",
+				"name": "NWB-Packaging-Subject-Capsule",
+				"slug": "8198603",
+				"version": 2,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "6xBkf7PeG126a3el",
+					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
+					"type": "dataset",
+					"name": "multiplane-ophys_775682_2025-02-24_09-13-44",
+					"source_path": "multiplane-ophys_775682_2025-02-24_09-13-44/"
+				}
+			]
+		},
+		{
+			"name": "capsule_aind_running_speed_nwb_3",
+			"capsule": {
+				"id": "14e3df38-c03c-4e40-bb97-b4d80564c214",
+				"name": "aind-running-speed-nwb",
+				"slug": "0283283"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "CjsTTKVPpb56Cv3g",
+					"source_id": "capsule_nwb_packaging_subject_capsule_2",
+					"type": "capsule",
+					"name": "NWB-Packaging-Subject-Capsule"
+				},
+				{
+					"id": "tNIsQDbjF1iU9xfY",
+					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
+					"type": "dataset",
+					"name": "multiplane-ophys_775682_2025-02-24_09-13-44",
+					"source_path": "multiplane-ophys_775682_2025-02-24_09-13-44/"
+				}
+			],
+			"results": {
+				"id": "14e3df38-c03c-4e40-bb97-b4d80564c214"
+			}
+		}
+	]
+}
