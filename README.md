@@ -1,3 +1,3 @@
-# aind-pipeline-template
+# aind-behavior-camstim-pipeline
 
-Basic structure of a pipeline to be customized as needed.
+Generated from aind-pipeline-template
