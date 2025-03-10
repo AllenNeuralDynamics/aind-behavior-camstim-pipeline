@@ -1,5 +1,6 @@
 metadata_version: 1
 name: aind-behavior-camstim-pipeline
+description: Packages running data for acquisitions using the camstim / sync system
 authors:
 - name: Ahad Bawany
 - name: Arielle Leon
