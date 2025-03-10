@@ -1,2 +1,5 @@
 metadata_version: 1
 name: aind-behavior-camstim-pipeline
+authors:
+- name: Ahad Bawany
+- name: Arielle Leon
