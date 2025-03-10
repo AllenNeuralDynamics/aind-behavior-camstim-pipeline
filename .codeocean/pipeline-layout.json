@@ -25,9 +25,10 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 690,
-				"y": 610
+				"x": 532.6666666666665,
+				"y": 770
 			},
+			"selected": false,
 			"type": "results"
 		},
 		{
@@ -36,20 +37,8 @@
 			},
 			"id": "capsule_nwb_packaging_subject_capsule_2",
 			"position": {
-				"x": 222.66666666666663,
-				"y": 340.3333333333333
-			},
-			"selected": true,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "14e3df38-c03c-4e40-bb97-b4d80564c214"
-			},
-			"id": "capsule_aind_running_speed_nwb_3",
-			"position": {
-				"x": 570,
-				"y": 345
+				"x": 97.33333333333326,
+				"y": 284.3333333333333
 			},
 			"selected": false,
 			"type": "capsule"
@@ -61,11 +50,23 @@
 				"y": 135
 			},
 			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+			},
+			"id": "capsule_aind_running_speed_nwb_3",
+			"position": {
+				"x": 463.33333333333337,
+				"y": 478.33333333333326
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1740543930979,
+	"timestamp": 1741638261449,
 	"viewport": {
-		"x": -199.62515258789062,
+		"x": 0,
 		"y": 0,
 		"zoom": 0.75
 	}

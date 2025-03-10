@@ -3,7 +3,7 @@
 	"attached_datasets": [
 		{
 			"id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-			"mount": "multiplane-ophys_775682_2025-02-24_09-13-44"
+			"mount": "ophys_mount"
 		}
 	]
 }

@@ -19,17 +19,20 @@
 					"id": "6xBkf7PeG126a3el",
 					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
 					"type": "dataset",
-					"name": "multiplane-ophys_775682_2025-02-24_09-13-44",
-					"source_path": "multiplane-ophys_775682_2025-02-24_09-13-44/"
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "ophys_session",
+					"collect": true
 				}
 			]
 		},
 		{
 			"name": "capsule_aind_running_speed_nwb_3",
 			"capsule": {
-				"id": "14e3df38-c03c-4e40-bb97-b4d80564c214",
+				"id": "06b256c7-4869-40ab-82c1-3c74bff19009",
 				"name": "aind-running-speed-nwb",
-				"slug": "0283283"
+				"slug": "7501486",
+				"version": 4
 			},
 			"resources": {
 				"cpus": 1,
@@ -40,18 +43,21 @@
 					"id": "CjsTTKVPpb56Cv3g",
 					"source_id": "capsule_nwb_packaging_subject_capsule_2",
 					"type": "capsule",
-					"name": "NWB-Packaging-Subject-Capsule"
+					"name": "NWB-Packaging-Subject-Capsule",
+					"target_path": "nwb",
+					"collect": true
 				},
 				{
 					"id": "tNIsQDbjF1iU9xfY",
 					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
 					"type": "dataset",
-					"name": "multiplane-ophys_775682_2025-02-24_09-13-44",
-					"source_path": "multiplane-ophys_775682_2025-02-24_09-13-44/"
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"collect": true
 				}
 			],
 			"results": {
-				"id": "14e3df38-c03c-4e40-bb97-b4d80564c214"
+				"id": "06b256c7-4869-40ab-82c1-3c74bff19009"
 			}
 		}
 	]
