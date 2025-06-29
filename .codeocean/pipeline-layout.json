@@ -25,10 +25,10 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 532.6666666666665,
-				"y": 770
+				"x": 510,
+				"y": 854
 			},
-			"selected": false,
+			"selected": true,
 			"type": "results"
 		},
 		{
@@ -57,17 +57,17 @@
 			},
 			"id": "capsule_aind_running_speed_nwb_3",
 			"position": {
-				"x": 463.33333333333337,
-				"y": 478.33333333333326
+				"x": 535.3333333333334,
+				"y": 470.33333333333326
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1741638261449,
+	"timestamp": 1744740872970,
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": 279,
+		"y": 100,
 		"zoom": 0.75
 	}
 }
