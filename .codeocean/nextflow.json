@@ -40,24 +40,58 @@
 			},
 			"inputs": [
 				{
+					"id": "tNIsQDbjF1iU9xfY",
+					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "session",
+					"collect": true
+				},
+				{
 					"id": "CjsTTKVPpb56Cv3g",
 					"source_id": "capsule_nwb_packaging_subject_capsule_2",
 					"type": "capsule",
 					"name": "NWB-Packaging-Subject-Capsule",
 					"target_path": "nwb",
 					"collect": true
-				},
+				}
+			]
+		},
+		{
+			"name": "capsule_aind_stimulus_camstim_nwb_4",
+			"capsule": {
+				"id": "b6908082-5b36-4e64-91d2-1b960d93a31d",
+				"name": "aind-stimulus-camstim-nwb",
+				"slug": "6731893",
+				"version": 2,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
 				{
-					"id": "tNIsQDbjF1iU9xfY",
+					"id": "03ZXgljkjwAt0ReA",
 					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
+					"target_path": "session",
+					"collect": true
+				},
+				{
+					"id": "xOVEM2O43tzy470H",
+					"source_id": "capsule_aind_running_speed_nwb_3",
+					"type": "capsule",
+					"name": "aind-running-speed-nwb",
+					"target_path": "nwb",
 					"collect": true
 				}
 			],
 			"results": {
-				"id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+				"id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
 			}
 		}
 	]

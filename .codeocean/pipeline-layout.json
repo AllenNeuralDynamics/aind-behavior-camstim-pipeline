@@ -7,18 +7,31 @@
 		},
 		{
 			"id": "xy-edge__4b242842-1a4b-4395-a937-6fd44d8d7287-capsule_aind_running_speed_nwb_3",
+			"selected": false,
 			"source": "4b242842-1a4b-4395-a937-6fd44d8d7287",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
 			"id": "xy-edge__capsule_nwb_packaging_subject_capsule_2-capsule_aind_running_speed_nwb_3",
+			"selected": false,
 			"source": "capsule_nwb_packaging_subject_capsule_2",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
-			"id": "xy-edge__capsule_aind_running_speed_nwb_3-results",
+			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_stimulus_camstim_nwb_4",
+			"selected": false,
 			"source": "capsule_aind_running_speed_nwb_3",
+			"target": "capsule_aind_stimulus_camstim_nwb_4"
+		},
+		{
+			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-results",
+			"source": "capsule_aind_stimulus_camstim_nwb_4",
 			"target": "results"
+		},
+		{
+			"id": "xy-edge__4b242842-1a4b-4395-a937-6fd44d8d7287-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "4b242842-1a4b-4395-a937-6fd44d8d7287",
+			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		}
 	],
 	"nodes": [
@@ -28,7 +41,7 @@
 				"x": 510,
 				"y": 854
 			},
-			"selected": true,
+			"selected": false,
 			"type": "results"
 		},
 		{
@@ -37,8 +50,8 @@
 			},
 			"id": "capsule_nwb_packaging_subject_capsule_2",
 			"position": {
-				"x": 97.33333333333326,
-				"y": 284.3333333333333
+				"x": 280.5391801417013,
+				"y": 361.62329995561356
 			},
 			"selected": false,
 			"type": "capsule"
@@ -49,6 +62,7 @@
 				"x": 150,
 				"y": 135
 			},
+			"selected": false,
 			"type": "dataset"
 		},
 		{
@@ -57,17 +71,29 @@
 			},
 			"id": "capsule_aind_running_speed_nwb_3",
 			"position": {
-				"x": 535.3333333333334,
-				"y": 470.33333333333326
+				"x": 592.5851604609484,
+				"y": 433.11964570038356
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
+			},
+			"id": "capsule_aind_stimulus_camstim_nwb_4",
+			"position": {
+				"x": 275.03813949466524,
+				"y": 619.8082378984304
 			},
 			"selected": false,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1744740872970,
+	"timestamp": 1751400464258,
 	"viewport": {
-		"x": 279,
-		"y": 100,
-		"zoom": 0.75
+		"x": 316.0037446214852,
+		"y": 139.06940241107958,
+		"zoom": 0.34933382921421463
 	}
 }
