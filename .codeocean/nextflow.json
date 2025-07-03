@@ -13,18 +13,7 @@
 			"resources": {
 				"cpus": 1,
 				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "6xBkf7PeG126a3el",
-					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-					"type": "dataset",
-					"name": "ophys_mount",
-					"source_path": "ophys_mount/",
-					"target_path": "ophys_session",
-					"collect": true
-				}
-			]
+			}
 		},
 		{
 			"name": "capsule_aind_running_speed_nwb_3",
@@ -39,15 +28,6 @@
 				"memory": 8
 			},
 			"inputs": [
-				{
-					"id": "tNIsQDbjF1iU9xfY",
-					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-					"type": "dataset",
-					"name": "ophys_mount",
-					"source_path": "ophys_mount/",
-					"target_path": "session",
-					"collect": true
-				},
 				{
 					"id": "CjsTTKVPpb56Cv3g",
 					"source_id": "capsule_nwb_packaging_subject_capsule_2",
@@ -72,15 +52,6 @@
 				"memory": 8
 			},
 			"inputs": [
-				{
-					"id": "03ZXgljkjwAt0ReA",
-					"source_id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-					"type": "dataset",
-					"name": "ophys_mount",
-					"source_path": "ophys_mount/",
-					"target_path": "session",
-					"collect": true
-				},
 				{
 					"id": "xOVEM2O43tzy470H",
 					"source_id": "capsule_aind_running_speed_nwb_3",

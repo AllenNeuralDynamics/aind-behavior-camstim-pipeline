@@ -1,17 +1,6 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__4b242842-1a4b-4395-a937-6fd44d8d7287-capsule_nwb_packaging_subject_capsule_2",
-			"source": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-			"target": "capsule_nwb_packaging_subject_capsule_2"
-		},
-		{
-			"id": "xy-edge__4b242842-1a4b-4395-a937-6fd44d8d7287-capsule_aind_running_speed_nwb_3",
-			"selected": false,
-			"source": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-			"target": "capsule_aind_running_speed_nwb_3"
-		},
-		{
 			"id": "xy-edge__capsule_nwb_packaging_subject_capsule_2-capsule_aind_running_speed_nwb_3",
 			"selected": false,
 			"source": "capsule_nwb_packaging_subject_capsule_2",
@@ -27,11 +16,6 @@
 			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-results",
 			"source": "capsule_aind_stimulus_camstim_nwb_4",
 			"target": "results"
-		},
-		{
-			"id": "xy-edge__4b242842-1a4b-4395-a937-6fd44d8d7287-capsule_aind_stimulus_camstim_nwb_4",
-			"source": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		}
 	],
 	"nodes": [
@@ -55,15 +39,6 @@
 			},
 			"selected": false,
 			"type": "capsule"
-		},
-		{
-			"id": "4b242842-1a4b-4395-a937-6fd44d8d7287",
-			"position": {
-				"x": 150,
-				"y": 135
-			},
-			"selected": false,
-			"type": "dataset"
 		},
 		{
 			"data": {
@@ -90,7 +65,7 @@
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1751400464258,
+	"timestamp": 1751572867929,
 	"viewport": {
 		"x": 316.0037446214852,
 		"y": 139.06940241107958,

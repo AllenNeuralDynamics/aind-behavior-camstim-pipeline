@@ -1,15 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:95f13c813d7c0b61cd8aa0f935364007cb9c0d3e8e383973d3b75d419ea0042a
+// hash:sha256:094710671763d7d801cfd15e9d72917197aa27a578bbc0da7c952b77175bcdce
 
 nextflow.enable.dsl = 1
 
-params.ophys_mount_url = 's3://aind-open-data/multiplane-ophys_775682_2025-02-24_09-13-44'
-
-ophys_mount_to_nwb_packaging_subject_capsule_1 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
-ophys_mount_to_aind_running_speed_nwb_2 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
-capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_3 = channel.create()
-ophys_mount_to_aind_stimulus_camstim_nwb_4 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
-capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_5 = channel.create()
+capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1 = channel.create()
+capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2 = channel.create()
 
 // capsule - NWB-Packaging-Subject-Capsule
 process capsule_nwb_packaging_subject_capsule_2 {
@@ -19,11 +14,8 @@ process capsule_nwb_packaging_subject_capsule_2 {
 	cpus 1
 	memory '7.5 GB'
 
-	input:
-	path 'capsule/data/ophys_session' from ophys_mount_to_nwb_packaging_subject_capsule_1.collect()
-
 	output:
-	path 'capsule/results/*' into capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_3
+	path 'capsule/results/*' into capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1
 
 	script:
 	"""
@@ -66,11 +58,10 @@ process capsule_aind_running_speed_nwb_3 {
 	memory '7.5 GB'
 
 	input:
-	path 'capsule/data/session' from ophys_mount_to_aind_running_speed_nwb_2.collect()
-	path 'capsule/data/nwb/' from capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_3.collect()
+	path 'capsule/data/nwb/' from capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1.collect()
 
 	output:
-	path 'capsule/results/*' into capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_5
+	path 'capsule/results/*' into capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2
 
 	script:
 	"""
@@ -115,8 +106,7 @@ process capsule_aind_stimulus_camstim_nwb_4 {
 	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/session' from ophys_mount_to_aind_stimulus_camstim_nwb_4.collect()
-	path 'capsule/data/nwb/' from capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_5.collect()
+	path 'capsule/data/nwb/' from capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2.collect()
 
 	output:
 	path 'capsule/results/*'
