@@ -13,7 +13,17 @@
 			"resources": {
 				"cpus": 1,
 				"memory": 8
-			}
+			},
+			"inputs": [
+				{
+					"id": "qDqd9mZwfhEmNdxz",
+					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"collect": true
+				}
+			]
 		},
 		{
 			"name": "capsule_aind_running_speed_nwb_3",

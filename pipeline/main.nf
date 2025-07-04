@@ -1,10 +1,13 @@
 #!/usr/bin/env nextflow
-// hash:sha256:094710671763d7d801cfd15e9d72917197aa27a578bbc0da7c952b77175bcdce
+// hash:sha256:4931020c4582dce19d9ee0e98faa682f2b3849f0a583845fe7699a747a1e6eec
 
 nextflow.enable.dsl = 1
 
-capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1 = channel.create()
-capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2 = channel.create()
+params.ophys_mount_url = 's3://aind-open-data/multiplane-ophys_790107_2025-07-01_09-39-45'
+
+ophys_mount_to_nwb_packaging_subject_capsule_1 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
+capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_2 = channel.create()
+capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_3 = channel.create()
 
 // capsule - NWB-Packaging-Subject-Capsule
 process capsule_nwb_packaging_subject_capsule_2 {
@@ -14,8 +17,11 @@ process capsule_nwb_packaging_subject_capsule_2 {
 	cpus 1
 	memory '7.5 GB'
 
+	input:
+	path 'capsule/data' from ophys_mount_to_nwb_packaging_subject_capsule_1.collect()
+
 	output:
-	path 'capsule/results/*' into capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1
+	path 'capsule/results/*' into capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_2
 
 	script:
 	"""
@@ -58,10 +64,10 @@ process capsule_aind_running_speed_nwb_3 {
 	memory '7.5 GB'
 
 	input:
-	path 'capsule/data/nwb/' from capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_1.collect()
+	path 'capsule/data/nwb/' from capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_2.collect()
 
 	output:
-	path 'capsule/results/*' into capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2
+	path 'capsule/results/*' into capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_3
 
 	script:
 	"""
@@ -106,7 +112,7 @@ process capsule_aind_stimulus_camstim_nwb_4 {
 	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/nwb/' from capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_2.collect()
+	path 'capsule/data/nwb/' from capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_3.collect()
 
 	output:
 	path 'capsule/results/*'
