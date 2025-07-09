@@ -2,13 +2,11 @@
 	"edges": [
 		{
 			"id": "xy-edge__capsule_nwb_packaging_subject_capsule_2-capsule_aind_running_speed_nwb_3",
-			"selected": false,
 			"source": "capsule_nwb_packaging_subject_capsule_2",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
 			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_stimulus_camstim_nwb_4",
-			"selected": false,
 			"source": "capsule_aind_running_speed_nwb_3",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
@@ -18,18 +16,18 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_nwb_packaging_subject_capsule_2",
-			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_nwb_packaging_subject_capsule_2",
+			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 			"target": "capsule_nwb_packaging_subject_capsule_2"
 		},
 		{
-			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_aind_running_speed_nwb_3",
-			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_running_speed_nwb_3",
+			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
-			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_aind_stimulus_camstim_nwb_4",
-			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		}
 	],
@@ -57,19 +55,19 @@
 		},
 		{
 			"data": {
-				"capsule_id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+				"capsule_id": "7963f0cb-e861-4a33-978e-d9ced0fa8230"
 			},
 			"id": "capsule_aind_running_speed_nwb_3",
 			"position": {
 				"x": 392.3159477489207,
 				"y": 410.8675109546027
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
 			"data": {
-				"capsule_id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966"
+				"capsule_id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
 			"position": {
@@ -80,7 +78,7 @@
 			"type": "capsule"
 		},
 		{
-			"id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 			"position": {
 				"x": 300,
 				"y": -120
@@ -88,5 +86,5 @@
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1752015333627
+	"timestamp": 1752055859677
 }

@@ -17,7 +17,7 @@
 			"inputs": [
 				{
 					"id": "qDqd9mZwfhEmNdxz",
-					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -29,10 +29,11 @@
 		{
 			"name": "capsule_aind_running_speed_nwb_3",
 			"capsule": {
-				"id": "06b256c7-4869-40ab-82c1-3c74bff19009",
+				"id": "7963f0cb-e861-4a33-978e-d9ced0fa8230",
 				"name": "aind-running-speed-nwb",
-				"slug": "7501486",
-				"version": 7
+				"slug": "3123019",
+				"commit": "e197000d953a1e293318434e2891b6d39ef22a15",
+				"image_tag": "f5bd9659678acae98324541685635563"
 			},
 			"resources": {
 				"cpus": 4,
@@ -41,7 +42,7 @@
 			"inputs": [
 				{
 					"id": "TuWnwSsCQ7GlsoRy",
-					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -61,10 +62,10 @@
 		{
 			"name": "capsule_aind_stimulus_camstim_nwb_4",
 			"capsule": {
-				"id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966",
+				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4",
 				"name": "aind-stimulus-camstim-nwb",
-				"slug": "4510069",
-				"commit": "2ba077986f7558ce617b2a12ca5b483dc6cac42c",
+				"slug": "9822388",
+				"commit": "20fb768bb28db3f9a0a7b335a84a005bff423fd1",
 				"image_tag": "40a52bb25365f8abe450516a45d9a155",
 				"app_panel": true
 			},
@@ -75,7 +76,7 @@
 			"inputs": [
 				{
 					"id": "dCR8oFCp6oxn2Mqd",
-					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -92,7 +93,7 @@
 				}
 			],
 			"results": {
-				"id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
+				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
 			}
 		}
 	]
