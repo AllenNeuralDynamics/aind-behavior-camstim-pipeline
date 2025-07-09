@@ -4,6 +4,10 @@
 		{
 			"id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
 			"mount": "ophys_mount"
+		},
+		{
+			"id": "da7be7d6-aef5-40e1-ba10-6a6def772efa",
+			"mount": "multiplane-ophys_767022_2025-02-27_09-19-01"
 		}
 	]
 }

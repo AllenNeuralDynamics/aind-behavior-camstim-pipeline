@@ -21,6 +21,16 @@
 			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_nwb_packaging_subject_capsule_2",
 			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
 			"target": "capsule_nwb_packaging_subject_capsule_2"
+		},
+		{
+			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_aind_running_speed_nwb_3",
+			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"target": "capsule_aind_running_speed_nwb_3"
+		},
+		{
+			"id": "xy-edge__09d48e33-7868-4ab8-897b-2660c1e7e756-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		}
 	],
 	"nodes": [
@@ -39,8 +49,8 @@
 			},
 			"id": "capsule_nwb_packaging_subject_capsule_2",
 			"position": {
-				"x": 254.7758579342746,
-				"y": 249.9822370567643
+				"x": -11.44513820913518,
+				"y": 164.10449636534173
 			},
 			"selected": false,
 			"type": "capsule"
@@ -51,22 +61,22 @@
 			},
 			"id": "capsule_aind_running_speed_nwb_3",
 			"position": {
-				"x": 592.5851604609484,
-				"y": 433.11964570038356
+				"x": 392.3159477489207,
+				"y": 410.8675109546027
 			},
 			"selected": false,
 			"type": "capsule"
 		},
 		{
 			"data": {
-				"capsule_id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
+				"capsule_id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966"
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
 			"position": {
 				"x": 275.03813949466524,
 				"y": 619.8082378984304
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -78,10 +88,5 @@
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1751583551368,
-	"viewport": {
-		"x": 61.003744621485225,
-		"y": 57.06940241107958,
-		"zoom": 0.34933382921421463
-	}
+	"timestamp": 1752015333627
 }

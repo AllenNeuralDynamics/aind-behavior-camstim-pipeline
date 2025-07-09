@@ -21,6 +21,7 @@
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
+					"target_path": "ophys_session",
 					"collect": true
 				}
 			]
@@ -31,13 +32,22 @@
 				"id": "06b256c7-4869-40ab-82c1-3c74bff19009",
 				"name": "aind-running-speed-nwb",
 				"slug": "7501486",
-				"version": 4
+				"version": 7
 			},
 			"resources": {
-				"cpus": 1,
-				"memory": 8
+				"cpus": 4,
+				"memory": 32
 			},
 			"inputs": [
+				{
+					"id": "TuWnwSsCQ7GlsoRy",
+					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "session",
+					"collect": true
+				},
 				{
 					"id": "CjsTTKVPpb56Cv3g",
 					"source_id": "capsule_nwb_packaging_subject_capsule_2",
@@ -51,17 +61,27 @@
 		{
 			"name": "capsule_aind_stimulus_camstim_nwb_4",
 			"capsule": {
-				"id": "b6908082-5b36-4e64-91d2-1b960d93a31d",
+				"id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966",
 				"name": "aind-stimulus-camstim-nwb",
-				"slug": "6731893",
-				"version": 2,
+				"slug": "4510069",
+				"commit": "2ba077986f7558ce617b2a12ca5b483dc6cac42c",
+				"image_tag": "40a52bb25365f8abe450516a45d9a155",
 				"app_panel": true
 			},
 			"resources": {
-				"cpus": 1,
-				"memory": 8
+				"cpus": 4,
+				"memory": 32
 			},
 			"inputs": [
+				{
+					"id": "dCR8oFCp6oxn2Mqd",
+					"source_id": "09d48e33-7868-4ab8-897b-2660c1e7e756",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "session",
+					"collect": true
+				},
 				{
 					"id": "xOVEM2O43tzy470H",
 					"source_id": "capsule_aind_running_speed_nwb_3",
