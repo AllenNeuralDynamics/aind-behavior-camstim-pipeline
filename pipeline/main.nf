@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:475ec222cdda6a73e5e273382aa6b097d3b476c5518929661b459538f128731f
+// hash:sha256:e620959761dd1b4fce4a25ad0507102496c06a4609120c8a8225da312ddefc33
 
 nextflow.enable.dsl = 1
 
@@ -10,6 +10,7 @@ ophys_mount_to_aind_running_speed_nwb_2 = channel.fromPath(params.ophys_mount_ur
 capsule_nwb_packaging_subject_capsule_2_to_capsule_aind_running_speed_nwb_3_3 = channel.create()
 ophys_mount_to_aind_stimulus_camstim_nwb_4 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
 capsule_aind_running_speed_nwb_3_to_capsule_aind_stimulus_camstim_nwb_4_5 = channel.create()
+ophys_mount_to_aind_ophys_camstim_behavior_qc_test_6 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
 
 // capsule - NWB-Packaging-Subject-Capsule
 process capsule_nwb_packaging_subject_capsule_2 {
@@ -150,6 +151,55 @@ process capsule_aind_stimulus_camstim_nwb_4 {
 	cd capsule/code
 	chmod +x run
 	./run ${params.capsule_aind_stimulus_camstim_nwb_4_args}
+
+	echo "[${task.tag}] completed!"
+	"""
+}
+
+// capsule - aind-ophys-camstim-behavior-qc TEST
+process capsule_aind_ophys_camstim_behavior_qc_test_5 {
+	tag 'capsule-9367761'
+	container "$REGISTRY_HOST/capsule/a7306bbf-3ea1-4f7f-9b97-cd62658604e5:02f429dcb2edd78bdff28f0e02657dc3"
+
+	cpus 1
+	memory '7.5 GB'
+
+	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
+
+	input:
+	path 'capsule/data' from ophys_mount_to_aind_ophys_camstim_behavior_qc_test_6.collect()
+
+	output:
+	path 'capsule/results/*'
+
+	script:
+	"""
+	#!/usr/bin/env bash
+	set -e
+
+	export CO_CAPSULE_ID=a7306bbf-3ea1-4f7f-9b97-cd62658604e5
+	export CO_CPUS=1
+	export CO_MEMORY=8053063680
+
+	mkdir -p capsule
+	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
+	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
+	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
+
+	echo "[${task.tag}] cloning git repo..."
+	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
+		git clone --filter=tree:0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9367761.git" capsule-repo
+	else
+		git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9367761.git" capsule-repo
+	fi
+	git -C capsule-repo checkout 8f2637a71d0b014be9c53f6d15553d685a85939d --quiet
+	mv capsule-repo/code capsule/code
+	rm -rf capsule-repo
+
+	echo "[${task.tag}] running capsule..."
+	cd capsule/code
+	chmod +x run
+	./run
 
 	echo "[${task.tag}] completed!"
 	"""
