@@ -95,6 +95,33 @@
 			"results": {
 				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
 			}
+		},
+		{
+			"name": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"capsule": {
+				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5",
+				"name": "aind-ophys-camstim-behavior-qc TEST",
+				"slug": "9367761",
+				"commit": "8f2637a71d0b014be9c53f6d15553d685a85939d",
+				"image_tag": "02f429dcb2edd78bdff28f0e02657dc3"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "6BZSC27wF2rGFrlx",
+					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+			}
 		}
 	]
 }

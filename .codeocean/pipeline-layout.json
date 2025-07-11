@@ -29,6 +29,17 @@
 			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_stimulus_camstim_nwb_4",
 			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
+		},
+		{
+			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"selected": true,
+			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"target": "capsule_aind_ophys_camstim_behavior_qc_test_5"
+		},
+		{
+			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_test_5-results",
+			"source": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"target": "results"
 		}
 	],
 	"nodes": [
@@ -62,7 +73,7 @@
 				"x": 392.3159477489207,
 				"y": 410.8675109546027
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -74,7 +85,7 @@
 				"x": 275.03813949466524,
 				"y": 619.8082378984304
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -84,7 +95,24 @@
 				"y": -120
 			},
 			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+			},
+			"id": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"position": {
+				"x": 614.0066651804843,
+				"y": 227.75408520963853
+			},
+			"selected": false,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1752055859677
+	"timestamp": 1752180187976,
+	"viewport": {
+		"x": 45.01127980453117,
+		"y": 80.88345119947124,
+		"zoom": 0.3
+	}
 }
