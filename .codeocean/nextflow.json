@@ -17,7 +17,7 @@
 			"inputs": [
 				{
 					"id": "qDqd9mZwfhEmNdxz",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -42,7 +42,7 @@
 			"inputs": [
 				{
 					"id": "TuWnwSsCQ7GlsoRy",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -62,10 +62,10 @@
 		{
 			"name": "capsule_aind_stimulus_camstim_nwb_4",
 			"capsule": {
-				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4",
+				"id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966",
 				"name": "aind-stimulus-camstim-nwb",
-				"slug": "9822388",
-				"commit": "20fb768bb28db3f9a0a7b335a84a005bff423fd1",
+				"slug": "4510069",
+				"commit": "2ba077986f7558ce617b2a12ca5b483dc6cac42c",
 				"image_tag": "40a52bb25365f8abe450516a45d9a155",
 				"app_panel": true
 			},
@@ -76,7 +76,7 @@
 			"inputs": [
 				{
 					"id": "dCR8oFCp6oxn2Mqd",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -91,18 +91,15 @@
 					"target_path": "nwb",
 					"collect": true
 				}
-			],
-			"results": {
-				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
-			}
+			]
 		},
 		{
 			"name": "capsule_aind_ophys_camstim_behavior_qc_test_5",
 			"capsule": {
 				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5",
-				"name": "aind-ophys-camstim-behavior-qc TEST",
+				"name": "aind-ophys-camstim-behavior-qc",
 				"slug": "9367761",
-				"commit": "8f2637a71d0b014be9c53f6d15553d685a85939d",
+				"commit": "f2878b6ba67211e140638f21da75bfd24218a435",
 				"image_tag": "02f429dcb2edd78bdff28f0e02657dc3"
 			},
 			"resources": {
@@ -112,7 +109,7 @@
 			"inputs": [
 				{
 					"id": "6BZSC27wF2rGFrlx",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -121,6 +118,43 @@
 			],
 			"results": {
 				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+			}
+		},
+		{
+			"name": "capsule_aind_licks_rewards_nwb_6",
+			"capsule": {
+				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d",
+				"name": "aind-licks-rewards-nwb",
+				"slug": "0086166",
+				"commit": "0ee74a7072c44f42ffd42254a2283bea314a279f",
+				"image_tag": "f516778900cffc836efec014c625cdf7",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "bCpGDpJREds6ZM1X",
+					"source_id": "capsule_aind_stimulus_camstim_nwb_4",
+					"type": "capsule",
+					"name": "aind-stimulus-camstim-nwb",
+					"target_path": "nwb",
+					"collect": true
+				},
+				{
+					"id": "5vAI7ZKTH1Anzm7o",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "session",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
 			}
 		}
 	]

@@ -11,43 +11,52 @@
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-results",
-			"source": "capsule_aind_stimulus_camstim_nwb_4",
-			"target": "results"
-		},
-		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_nwb_packaging_subject_capsule_2",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_nwb_packaging_subject_capsule_2",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_nwb_packaging_subject_capsule_2"
 		},
 		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_running_speed_nwb_3",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_running_speed_nwb_3",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_stimulus_camstim_nwb_4",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_ophys_camstim_behavior_qc_test_5",
-			"selected": true,
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_aind_ophys_camstim_behavior_qc_test_5"
 		},
 		{
 			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_test_5-results",
 			"source": "capsule_aind_ophys_camstim_behavior_qc_test_5",
 			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-capsule_aind_licks_rewards_nwb_6",
+			"source": "capsule_aind_stimulus_camstim_nwb_4",
+			"target": "capsule_aind_licks_rewards_nwb_6"
+		},
+		{
+			"id": "xy-edge__capsule_aind_licks_rewards_nwb_6-results",
+			"source": "capsule_aind_licks_rewards_nwb_6",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_licks_rewards_nwb_6",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"target": "capsule_aind_licks_rewards_nwb_6"
 		}
 	],
 	"nodes": [
 		{
 			"id": "results",
 			"position": {
-				"x": 510,
-				"y": 854
+				"x": 436.66666666666663,
+				"y": 1144
 			},
 			"selected": false,
 			"type": "results"
@@ -78,26 +87,6 @@
 		},
 		{
 			"data": {
-				"capsule_id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
-			},
-			"id": "capsule_aind_stimulus_camstim_nwb_4",
-			"position": {
-				"x": 275.03813949466524,
-				"y": 619.8082378984304
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
-			"position": {
-				"x": 300,
-				"y": -120
-			},
-			"type": "dataset"
-		},
-		{
-			"data": {
 				"capsule_id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
 			},
 			"id": "capsule_aind_ophys_camstim_behavior_qc_test_5",
@@ -107,12 +96,39 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966"
+			},
+			"id": "capsule_aind_stimulus_camstim_nwb_4",
+			"position": {
+				"x": -38.29519383866809,
+				"y": 616.4749045650972
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
+			},
+			"id": "capsule_aind_licks_rewards_nwb_6",
+			"position": {
+				"x": 1.6666666666666998,
+				"y": 825
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"position": {
+				"x": 300,
+				"y": -120
+			},
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1752180187976,
-	"viewport": {
-		"x": 45.01127980453117,
-		"y": 80.88345119947124,
-		"zoom": 0.3
-	}
+	"timestamp": 1752770962044
 }
