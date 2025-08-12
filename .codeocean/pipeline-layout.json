@@ -1,19 +1,9 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__capsule_nwb_packaging_subject_capsule_2-capsule_aind_running_speed_nwb_3",
-			"source": "capsule_nwb_packaging_subject_capsule_2",
-			"target": "capsule_aind_running_speed_nwb_3"
-		},
-		{
 			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_stimulus_camstim_nwb_4",
 			"source": "capsule_aind_running_speed_nwb_3",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
-		},
-		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_nwb_packaging_subject_capsule_2",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
-			"target": "capsule_nwb_packaging_subject_capsule_2"
 		},
 		{
 			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_running_speed_nwb_3",
@@ -26,13 +16,13 @@
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_ophys_camstim_behavior_qc_5",
 			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
-			"target": "capsule_aind_ophys_camstim_behavior_qc_test_5"
+			"target": "capsule_aind_ophys_camstim_behavior_qc_5"
 		},
 		{
-			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_test_5-results",
-			"source": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_5-results",
+			"source": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"target": "results"
 		},
 		{
@@ -63,42 +53,6 @@
 		},
 		{
 			"data": {
-				"capsule_id": "bdc9f09f-0005-4d09-aaf9-7e82abd93f19"
-			},
-			"id": "capsule_nwb_packaging_subject_capsule_2",
-			"position": {
-				"x": -11.44513820913518,
-				"y": 164.10449636534173
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "7963f0cb-e861-4a33-978e-d9ced0fa8230"
-			},
-			"id": "capsule_aind_running_speed_nwb_3",
-			"position": {
-				"x": 392.3159477489207,
-				"y": 410.8675109546027
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
-			},
-			"id": "capsule_aind_ophys_camstim_behavior_qc_test_5",
-			"position": {
-				"x": 614.0066651804843,
-				"y": 227.75408520963853
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
 				"capsule_id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966"
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
@@ -106,7 +60,7 @@
 				"x": -38.29519383866809,
 				"y": 616.4749045650972
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -118,7 +72,7 @@
 				"x": 1.6666666666666998,
 				"y": 825
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -128,7 +82,31 @@
 				"y": -120
 			},
 			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "009f0be4-3626-4136-86dd-63cd43dbf373"
+			},
+			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
+			"position": {
+				"x": 614.0066651804843,
+				"y": 227.75408520963853
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "b4828495-3328-4ea4-9c27-615435e3e54d"
+			},
+			"id": "capsule_aind_running_speed_nwb_3",
+			"position": {
+				"x": -151.4322518301224,
+				"y": 232.13542839069174
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1752770962044
+	"timestamp": 1755032054617
 }

@@ -2,38 +2,11 @@
 	"version": 1,
 	"processes": [
 		{
-			"name": "capsule_nwb_packaging_subject_capsule_2",
-			"capsule": {
-				"id": "bdc9f09f-0005-4d09-aaf9-7e82abd93f19",
-				"name": "NWB-Packaging-Subject-Capsule",
-				"slug": "8198603",
-				"version": 2,
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 1,
-				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "qDqd9mZwfhEmNdxz",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
-					"type": "dataset",
-					"name": "ophys_mount",
-					"source_path": "ophys_mount/",
-					"target_path": "ophys_session",
-					"collect": true
-				}
-			]
-		},
-		{
 			"name": "capsule_aind_running_speed_nwb_3",
 			"capsule": {
-				"id": "7963f0cb-e861-4a33-978e-d9ced0fa8230",
+				"id": "b4828495-3328-4ea4-9c27-615435e3e54d",
 				"name": "aind-running-speed-nwb",
-				"slug": "3123019",
-				"commit": "e197000d953a1e293318434e2891b6d39ef22a15",
-				"image_tag": "f5bd9659678acae98324541685635563"
+				"slug": "8184979"
 			},
 			"resources": {
 				"cpus": 4,
@@ -47,14 +20,6 @@
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
 					"target_path": "session",
-					"collect": true
-				},
-				{
-					"id": "CjsTTKVPpb56Cv3g",
-					"source_id": "capsule_nwb_packaging_subject_capsule_2",
-					"type": "capsule",
-					"name": "NWB-Packaging-Subject-Capsule",
-					"target_path": "nwb",
 					"collect": true
 				}
 			]
@@ -94,17 +59,17 @@
 			]
 		},
 		{
-			"name": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"name": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"capsule": {
-				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5",
+				"id": "009f0be4-3626-4136-86dd-63cd43dbf373",
 				"name": "aind-ophys-camstim-behavior-qc",
-				"slug": "9367761",
-				"commit": "f2878b6ba67211e140638f21da75bfd24218a435",
-				"image_tag": "02f429dcb2edd78bdff28f0e02657dc3"
+				"slug": "5809915",
+				"commit": "379cb5d4b2058b3907a81ae5e06b436b64a57a0d",
+				"image_tag": "efa3904874822c0b8139ddbf292748a1"
 			},
 			"resources": {
-				"cpus": 1,
-				"memory": 8
+				"cpus": 4,
+				"memory": 16
 			},
 			"inputs": [
 				{
@@ -113,11 +78,12 @@
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
+					"target_path": "ophys",
 					"collect": true
 				}
 			],
 			"results": {
-				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+				"id": "009f0be4-3626-4136-86dd-63cd43dbf373"
 			}
 		},
 		{
