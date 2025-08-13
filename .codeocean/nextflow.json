@@ -6,7 +6,9 @@
 			"capsule": {
 				"id": "b4828495-3328-4ea4-9c27-615435e3e54d",
 				"name": "aind-running-speed-nwb",
-				"slug": "8184979"
+				"slug": "8184979",
+				"commit": "167809526593202126149a95ce118452d7706af6",
+				"image_tag": "5981110d5a193262196b86da076d7078"
 			},
 			"resources": {
 				"cpus": 4,
@@ -64,7 +66,7 @@
 				"id": "009f0be4-3626-4136-86dd-63cd43dbf373",
 				"name": "aind-ophys-camstim-behavior-qc",
 				"slug": "5809915",
-				"commit": "379cb5d4b2058b3907a81ae5e06b436b64a57a0d",
+				"commit": "9e5f1b3bcec60c1cd2a12862b654e501dc9c2070",
 				"image_tag": "efa3904874822c0b8139ddbf292748a1"
 			},
 			"resources": {
@@ -121,6 +123,41 @@
 			],
 			"results": {
 				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
+			}
+		},
+		{
+			"name": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"capsule": {
+				"id": "d51df783-d892-4304-a129-238a9baea72a",
+				"name": "aind-pipeline-processing-metadata-aggregator",
+				"slug": "8250608",
+				"version": 5,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "ZRhXU7RKwbAKUBzp",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/*.json",
+					"collect": true
+				},
+				{
+					"id": "7g5A8gIFj0HW5crP",
+					"source_id": "capsule_aind_running_speed_nwb_3",
+					"type": "capsule",
+					"name": "aind-running-speed-nwb",
+					"source_path": "*.json",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "d51df783-d892-4304-a129-238a9baea72a"
 			}
 		}
 	]
