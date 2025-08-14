@@ -2,38 +2,13 @@
 	"version": 1,
 	"processes": [
 		{
-			"name": "capsule_nwb_packaging_subject_capsule_2",
-			"capsule": {
-				"id": "bdc9f09f-0005-4d09-aaf9-7e82abd93f19",
-				"name": "NWB-Packaging-Subject-Capsule",
-				"slug": "8198603",
-				"version": 2,
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 1,
-				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "qDqd9mZwfhEmNdxz",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
-					"type": "dataset",
-					"name": "ophys_mount",
-					"source_path": "ophys_mount/",
-					"target_path": "ophys_session",
-					"collect": true
-				}
-			]
-		},
-		{
 			"name": "capsule_aind_running_speed_nwb_3",
 			"capsule": {
-				"id": "7963f0cb-e861-4a33-978e-d9ced0fa8230",
+				"id": "b4828495-3328-4ea4-9c27-615435e3e54d",
 				"name": "aind-running-speed-nwb",
-				"slug": "3123019",
-				"commit": "e197000d953a1e293318434e2891b6d39ef22a15",
-				"image_tag": "f5bd9659678acae98324541685635563"
+				"slug": "8184979",
+				"commit": "167809526593202126149a95ce118452d7706af6",
+				"image_tag": "5981110d5a193262196b86da076d7078"
 			},
 			"resources": {
 				"cpus": 4,
@@ -42,19 +17,11 @@
 			"inputs": [
 				{
 					"id": "TuWnwSsCQ7GlsoRy",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
 					"target_path": "session",
-					"collect": true
-				},
-				{
-					"id": "CjsTTKVPpb56Cv3g",
-					"source_id": "capsule_nwb_packaging_subject_capsule_2",
-					"type": "capsule",
-					"name": "NWB-Packaging-Subject-Capsule",
-					"target_path": "nwb",
 					"collect": true
 				}
 			]
@@ -62,10 +29,10 @@
 		{
 			"name": "capsule_aind_stimulus_camstim_nwb_4",
 			"capsule": {
-				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4",
+				"id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966",
 				"name": "aind-stimulus-camstim-nwb",
-				"slug": "9822388",
-				"commit": "20fb768bb28db3f9a0a7b335a84a005bff423fd1",
+				"slug": "4510069",
+				"commit": "2ba077986f7558ce617b2a12ca5b483dc6cac42c",
 				"image_tag": "40a52bb25365f8abe450516a45d9a155",
 				"app_panel": true
 			},
@@ -76,7 +43,7 @@
 			"inputs": [
 				{
 					"id": "dCR8oFCp6oxn2Mqd",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -91,19 +58,45 @@
 					"target_path": "nwb",
 					"collect": true
 				}
+			]
+		},
+		{
+			"name": "capsule_aind_ophys_camstim_behavior_qc_5",
+			"capsule": {
+				"id": "009f0be4-3626-4136-86dd-63cd43dbf373",
+				"name": "aind-ophys-camstim-behavior-qc",
+				"slug": "5809915",
+				"commit": "9e5f1b3bcec60c1cd2a12862b654e501dc9c2070",
+				"image_tag": "efa3904874822c0b8139ddbf292748a1"
+			},
+			"resources": {
+				"cpus": 4,
+				"memory": 16
+			},
+			"inputs": [
+				{
+					"id": "6BZSC27wF2rGFrlx",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/",
+					"target_path": "ophys",
+					"collect": true
+				}
 			],
 			"results": {
-				"id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
+				"id": "009f0be4-3626-4136-86dd-63cd43dbf373"
 			}
 		},
 		{
-			"name": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"name": "capsule_aind_licks_rewards_nwb_6",
 			"capsule": {
-				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5",
-				"name": "aind-ophys-camstim-behavior-qc TEST",
-				"slug": "9367761",
-				"commit": "8f2637a71d0b014be9c53f6d15553d685a85939d",
-				"image_tag": "02f429dcb2edd78bdff28f0e02657dc3"
+				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d",
+				"name": "aind-licks-rewards-nwb",
+				"slug": "0086166",
+				"commit": "0ee74a7072c44f42ffd42254a2283bea314a279f",
+				"image_tag": "f516778900cffc836efec014c625cdf7",
+				"app_panel": true
 			},
 			"resources": {
 				"cpus": 1,
@@ -111,16 +104,60 @@
 			},
 			"inputs": [
 				{
-					"id": "6BZSC27wF2rGFrlx",
-					"source_id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+					"id": "bCpGDpJREds6ZM1X",
+					"source_id": "capsule_aind_stimulus_camstim_nwb_4",
+					"type": "capsule",
+					"name": "aind-stimulus-camstim-nwb",
+					"target_path": "nwb",
+					"collect": true
+				},
+				{
+					"id": "5vAI7ZKTH1Anzm7o",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
+					"target_path": "session",
 					"collect": true
 				}
 			],
 			"results": {
-				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
+			}
+		},
+		{
+			"name": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"capsule": {
+				"id": "d51df783-d892-4304-a129-238a9baea72a",
+				"name": "aind-pipeline-processing-metadata-aggregator",
+				"slug": "8250608",
+				"version": 5,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "ZRhXU7RKwbAKUBzp",
+					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"type": "dataset",
+					"name": "ophys_mount",
+					"source_path": "ophys_mount/*.json",
+					"collect": true
+				},
+				{
+					"id": "7g5A8gIFj0HW5crP",
+					"source_id": "capsule_aind_running_speed_nwb_3",
+					"type": "capsule",
+					"name": "aind-running-speed-nwb",
+					"source_path": "*.json",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "d51df783-d892-4304-a129-238a9baea72a"
 			}
 		}
 	]
