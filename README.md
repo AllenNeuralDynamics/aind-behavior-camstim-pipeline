@@ -2,7 +2,7 @@
 
 The aind-behavior-camstim-pipeline processes camstim data using their input ephys or ophys asset. The data from the h5, sync, and pkl files are added as stimulus tables, running speed tables, and lick/behavior tables to the nwb. 
 
-The pipeline runs on [Nextflow](https://www.nextflow.io/) and contains the following steps:
+The pipeline runs on [Nextflow](https://www.nextflow.io/) and contains the following capsules:
 
 * [aind-stimulus-packaging-nwb-capsule](https://github.com/AllenNeuralDynamics/NWB-Packaging-Stimulus-Capsule.git): The data from the rows of the input csv data is added to a stimulus table within the nwb
 * [aind-running-speed-nwb-capsule](https://github.com/AllenNeuralDynamics/NWB-Packaging-Running-Capsule.git): The data from the sync file is used to create a raw running speed and processed running speed table. These are appended to the nwb file
