@@ -68,26 +68,14 @@
 		},
 		{
 			"data": {
-				"capsule_id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966"
+				"capsule_id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
 			"position": {
 				"x": -38.29519383866809,
 				"y": 616.4749045650972
 			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
-			},
-			"id": "capsule_aind_licks_rewards_nwb_6",
-			"position": {
-				"x": 1.6666666666666998,
-				"y": 825
-			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -96,32 +84,8 @@
 				"x": 300,
 				"y": -120
 			},
-			"selected": true,
+			"selected": false,
 			"type": "dataset"
-		},
-		{
-			"data": {
-				"capsule_id": "009f0be4-3626-4136-86dd-63cd43dbf373"
-			},
-			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
-			"position": {
-				"x": 614.0066651804843,
-				"y": 227.75408520963853
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "b4828495-3328-4ea4-9c27-615435e3e54d"
-			},
-			"id": "capsule_aind_running_speed_nwb_3",
-			"position": {
-				"x": -151.4322518301224,
-				"y": 232.13542839069174
-			},
-			"selected": false,
-			"type": "capsule"
 		},
 		{
 			"data": {
@@ -134,12 +98,48 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+			},
+			"id": "capsule_aind_running_speed_nwb_3",
+			"position": {
+				"x": -151.4322518301224,
+				"y": 232.13542839069174
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5"
+			},
+			"id": "capsule_aind_licks_rewards_nwb_6",
+			"position": {
+				"x": 1.6666666666666998,
+				"y": 825
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "b8993607-57ed-4cbe-8b18-a0523228410f"
+			},
+			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
+			"position": {
+				"x": 614.0066651804843,
+				"y": 227.75408520963853
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1755107396702,
+	"timestamp": 1755653285382,
 	"viewport": {
-		"x": 156.15999755859377,
-		"y": 109.27999877929688,
+		"x": 240.75999755859377,
+		"y": 97.00000305175782,
 		"zoom": 0.3
 	}
 }

@@ -4,11 +4,10 @@
 		{
 			"name": "capsule_aind_running_speed_nwb_3",
 			"capsule": {
-				"id": "b4828495-3328-4ea4-9c27-615435e3e54d",
+				"id": "06b256c7-4869-40ab-82c1-3c74bff19009",
 				"name": "aind-running-speed-nwb",
-				"slug": "8184979",
-				"commit": "167809526593202126149a95ce118452d7706af6",
-				"image_tag": "5981110d5a193262196b86da076d7078"
+				"slug": "7501486",
+				"version": 8
 			},
 			"resources": {
 				"cpus": 4,
@@ -29,11 +28,10 @@
 		{
 			"name": "capsule_aind_stimulus_camstim_nwb_4",
 			"capsule": {
-				"id": "6b0aa5c9-bc08-46c6-8d16-712d706eb966",
+				"id": "b6908082-5b36-4e64-91d2-1b960d93a31d",
 				"name": "aind-stimulus-camstim-nwb",
-				"slug": "4510069",
-				"commit": "2ba077986f7558ce617b2a12ca5b483dc6cac42c",
-				"image_tag": "40a52bb25365f8abe450516a45d9a155",
+				"slug": "6731893",
+				"version": 3,
 				"app_panel": true
 			},
 			"resources": {
@@ -63,15 +61,14 @@
 		{
 			"name": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"capsule": {
-				"id": "009f0be4-3626-4136-86dd-63cd43dbf373",
+				"id": "b8993607-57ed-4cbe-8b18-a0523228410f",
 				"name": "aind-ophys-camstim-behavior-qc",
-				"slug": "5809915",
-				"commit": "9e5f1b3bcec60c1cd2a12862b654e501dc9c2070",
-				"image_tag": "efa3904874822c0b8139ddbf292748a1"
+				"slug": "2806581",
+				"version": 1
 			},
 			"resources": {
-				"cpus": 4,
-				"memory": 16
+				"cpus": 1,
+				"memory": 8
 			},
 			"inputs": [
 				{
@@ -85,17 +82,16 @@
 				}
 			],
 			"results": {
-				"id": "009f0be4-3626-4136-86dd-63cd43dbf373"
+				"id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
 			}
 		},
 		{
 			"name": "capsule_aind_licks_rewards_nwb_6",
 			"capsule": {
-				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d",
+				"id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5",
 				"name": "aind-licks-rewards-nwb",
-				"slug": "0086166",
-				"commit": "0ee74a7072c44f42ffd42254a2283bea314a279f",
-				"image_tag": "f516778900cffc836efec014c625cdf7",
+				"slug": "3770822",
+				"version": 1,
 				"app_panel": true
 			},
 			"resources": {
@@ -122,7 +118,7 @@
 				}
 			],
 			"results": {
-				"id": "65a959cd-4190-4998-bbfd-9eb812974c1d"
+				"id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5"
 			}
 		},
 		{
