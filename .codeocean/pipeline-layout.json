@@ -1,118 +1,145 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__capsule_nwb_packaging_subject_capsule_2-capsule_aind_running_speed_nwb_3",
-			"source": "capsule_nwb_packaging_subject_capsule_2",
-			"target": "capsule_aind_running_speed_nwb_3"
-		},
-		{
 			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_stimulus_camstim_nwb_4",
 			"source": "capsule_aind_running_speed_nwb_3",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-results",
-			"source": "capsule_aind_stimulus_camstim_nwb_4",
-			"target": "results"
-		},
-		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_nwb_packaging_subject_capsule_2",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
-			"target": "capsule_nwb_packaging_subject_capsule_2"
-		},
-		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_running_speed_nwb_3",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_running_speed_nwb_3",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_stimulus_camstim_nwb_4",
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__9603e3b3-fca3-4829-bc07-e2a913456c64-capsule_aind_ophys_camstim_behavior_qc_test_5",
-			"selected": true,
-			"source": "9603e3b3-fca3-4829-bc07-e2a913456c64",
-			"target": "capsule_aind_ophys_camstim_behavior_qc_test_5"
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_ophys_camstim_behavior_qc_5",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"target": "capsule_aind_ophys_camstim_behavior_qc_5"
 		},
 		{
-			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_test_5-results",
-			"source": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_5-results",
+			"source": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-capsule_aind_licks_rewards_nwb_6",
+			"source": "capsule_aind_stimulus_camstim_nwb_4",
+			"target": "capsule_aind_licks_rewards_nwb_6"
+		},
+		{
+			"id": "xy-edge__capsule_aind_licks_rewards_nwb_6-results",
+			"source": "capsule_aind_licks_rewards_nwb_6",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_licks_rewards_nwb_6",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"target": "capsule_aind_licks_rewards_nwb_6"
+		},
+		{
+			"id": "xy-edge__capsule_aind_pipeline_processing_metadata_aggregator_7-results",
+			"source": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"source": "capsule_aind_running_speed_nwb_3",
+			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
+		},
+		{
+			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
 		}
 	],
 	"nodes": [
 		{
 			"id": "results",
 			"position": {
-				"x": 510,
-				"y": 854
+				"x": 436.66666666666663,
+				"y": 1144
 			},
 			"selected": false,
 			"type": "results"
 		},
 		{
 			"data": {
-				"capsule_id": "bdc9f09f-0005-4d09-aaf9-7e82abd93f19"
-			},
-			"id": "capsule_nwb_packaging_subject_capsule_2",
-			"position": {
-				"x": -11.44513820913518,
-				"y": 164.10449636534173
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "7963f0cb-e861-4a33-978e-d9ced0fa8230"
-			},
-			"id": "capsule_aind_running_speed_nwb_3",
-			"position": {
-				"x": 392.3159477489207,
-				"y": 410.8675109546027
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "e85387cd-a40e-4b9e-b2b3-5fe11c893fb4"
+				"capsule_id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
 			"position": {
-				"x": 275.03813949466524,
-				"y": 619.8082378984304
+				"x": -38.29519383866809,
+				"y": 616.4749045650972
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
-			"id": "9603e3b3-fca3-4829-bc07-e2a913456c64",
+			"id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
 			"position": {
 				"x": 300,
 				"y": -120
 			},
+			"selected": false,
 			"type": "dataset"
 		},
 		{
 			"data": {
-				"capsule_id": "a7306bbf-3ea1-4f7f-9b97-cd62658604e5"
+				"capsule_id": "d51df783-d892-4304-a129-238a9baea72a"
 			},
-			"id": "capsule_aind_ophys_camstim_behavior_qc_test_5",
+			"id": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"position": {
+				"x": -240.00000000000006,
+				"y": 870
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+			},
+			"id": "capsule_aind_running_speed_nwb_3",
+			"position": {
+				"x": -151.4322518301224,
+				"y": 232.13542839069174
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5"
+			},
+			"id": "capsule_aind_licks_rewards_nwb_6",
+			"position": {
+				"x": 1.6666666666666998,
+				"y": 825
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "b8993607-57ed-4cbe-8b18-a0523228410f"
+			},
+			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"position": {
 				"x": 614.0066651804843,
 				"y": 227.75408520963853
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1752180187976,
+	"timestamp": 1755653285382,
 	"viewport": {
-		"x": 45.01127980453117,
-		"y": 80.88345119947124,
+		"x": 240.75999755859377,
+		"y": 97.00000305175782,
 		"zoom": 0.3
 	}
 }
