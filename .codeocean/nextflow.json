@@ -127,7 +127,7 @@
 				"id": "d51df783-d892-4304-a129-238a9baea72a",
 				"name": "aind-pipeline-processing-metadata-aggregator",
 				"slug": "8250608",
-				"version": 5,
+				"version": 6,
 				"app_panel": true
 			},
 			"resources": {

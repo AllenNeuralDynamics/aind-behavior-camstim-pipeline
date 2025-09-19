@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:761acd8fc4144dc2067055969e0266824aa60b786769d470229e602c42c92fdd
+// hash:sha256:586c1ce3e77689bea56a7f1c7a6f571a67ad73af8f9c4fb99691008aed5b2a06
 
 nextflow.enable.dsl = 1
 
@@ -49,7 +49,7 @@ process capsule_aind_running_speed_nwb_3 {
 	else
 		git clone --branch v8.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-7501486.git" capsule-repo
 	fi
-	mv capsule-repo/code capsule/code
+	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
 	echo "[${task.tag}] running capsule..."
@@ -96,7 +96,7 @@ process capsule_aind_stimulus_camstim_nwb_4 {
 	else
 		git clone --branch v3.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-6731893.git" capsule-repo
 	fi
-	mv capsule-repo/code capsule/code
+	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
 	echo "[${task.tag}] running capsule..."
@@ -144,7 +144,7 @@ process capsule_aind_ophys_camstim_behavior_qc_5 {
 	else
 		git clone --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2806581.git" capsule-repo
 	fi
-	mv capsule-repo/code capsule/code
+	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
 	echo "[${task.tag}] running capsule..."
@@ -193,7 +193,7 @@ process capsule_aind_licks_rewards_nwb_6 {
 	else
 		git clone --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3770822.git" capsule-repo
 	fi
-	mv capsule-repo/code capsule/code
+	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
 	echo "[${task.tag}] running capsule..."
@@ -208,7 +208,7 @@ process capsule_aind_licks_rewards_nwb_6 {
 // capsule - aind-pipeline-processing-metadata-aggregator
 process capsule_aind_pipeline_processing_metadata_aggregator_7 {
 	tag 'capsule-8250608'
-	container "$REGISTRY_HOST/published/d51df783-d892-4304-a129-238a9baea72a:v5"
+	container "$REGISTRY_HOST/published/d51df783-d892-4304-a129-238a9baea72a:v6"
 
 	cpus 1
 	memory '7.5 GB'
@@ -238,11 +238,11 @@ process capsule_aind_pipeline_processing_metadata_aggregator_7 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git clone --filter=tree:0 --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8250608.git" capsule-repo
+		git clone --filter=tree:0 --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8250608.git" capsule-repo
 	else
-		git clone --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8250608.git" capsule-repo
+		git clone --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8250608.git" capsule-repo
 	fi
-	mv capsule-repo/code capsule/code
+	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
 	echo "[${task.tag}] running capsule..."
