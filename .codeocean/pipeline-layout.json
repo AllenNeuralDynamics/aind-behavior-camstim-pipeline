@@ -6,18 +6,18 @@
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_running_speed_nwb_3",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_running_speed_nwb_3",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 			"target": "capsule_aind_running_speed_nwb_3"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_stimulus_camstim_nwb_4",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 			"target": "capsule_aind_stimulus_camstim_nwb_4"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_ophys_camstim_behavior_qc_5",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_ophys_camstim_behavior_qc_5",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 			"target": "capsule_aind_ophys_camstim_behavior_qc_5"
 		},
 		{
@@ -36,8 +36,8 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_licks_rewards_nwb_6",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_licks_rewards_nwb_6",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 			"target": "capsule_aind_licks_rewards_nwb_6"
 		},
 		{
@@ -51,8 +51,8 @@
 			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
 		},
 		{
-			"id": "xy-edge__aa600124-bcbf-4b4a-84b9-8ecff875b37d-capsule_aind_pipeline_processing_metadata_aggregator_7",
-			"source": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
 		}
 	],
@@ -77,15 +77,6 @@
 			},
 			"selected": true,
 			"type": "capsule"
-		},
-		{
-			"id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
-			"position": {
-				"x": 300,
-				"y": -120
-			},
-			"selected": false,
-			"type": "dataset"
 		},
 		{
 			"data": {
@@ -134,12 +125,15 @@
 			},
 			"selected": true,
 			"type": "capsule"
+		},
+		{
+			"id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"position": {
+				"x": 300,
+				"y": -120
+			},
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1755653285382,
-	"viewport": {
-		"x": 240.75999755859377,
-		"y": 97.00000305175782,
-		"zoom": 0.3
-	}
+	"timestamp": 1761090387604
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
-// hash:sha256:586c1ce3e77689bea56a7f1c7a6f571a67ad73af8f9c4fb99691008aed5b2a06
+// hash:sha256:2767291b0ad48665273e8dfbe2bd1673d7e3bfcfbed93de2cf4cb9a28d25bb13
 
 nextflow.enable.dsl = 1
 
-params.ophys_mount_url = 's3://aind-private-data-prod-o5171v/multiplane-ophys_770966_2025-05-14_12-14-46'
+params.ophys_mount_url = 's3://aind-open-data/multiplane-ophys_800995_2025-09-15_12-16-41'
 
 ophys_mount_to_aind_running_speed_nwb_1 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
 ophys_mount_to_aind_stimulus_camstim_nwb_2 = channel.fromPath(params.ophys_mount_url + "/", type: 'any')
@@ -159,7 +159,7 @@ process capsule_aind_ophys_camstim_behavior_qc_5 {
 // capsule - aind-licks-rewards-nwb
 process capsule_aind_licks_rewards_nwb_6 {
 	tag 'capsule-3770822'
-	container "$REGISTRY_HOST/published/a1a6795a-6f4c-4311-87f8-53e93bc90fb5:v1"
+	container "$REGISTRY_HOST/published/a1a6795a-6f4c-4311-87f8-53e93bc90fb5:v2"
 
 	cpus 1
 	memory '7.5 GB'
@@ -189,9 +189,9 @@ process capsule_aind_licks_rewards_nwb_6 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git clone --filter=tree:0 --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3770822.git" capsule-repo
+		git clone --filter=tree:0 --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3770822.git" capsule-repo
 	else
-		git clone --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3770822.git" capsule-repo
+		git clone --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3770822.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
