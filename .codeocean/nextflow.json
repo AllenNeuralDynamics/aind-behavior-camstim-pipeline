@@ -16,7 +16,7 @@
 			"inputs": [
 				{
 					"id": "TuWnwSsCQ7GlsoRy",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"source_id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -41,7 +41,7 @@
 			"inputs": [
 				{
 					"id": "dCR8oFCp6oxn2Mqd",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"source_id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -73,7 +73,7 @@
 			"inputs": [
 				{
 					"id": "6BZSC27wF2rGFrlx",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"source_id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -91,7 +91,7 @@
 				"id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5",
 				"name": "aind-licks-rewards-nwb",
 				"slug": "3770822",
-				"version": 1,
+				"version": 2,
 				"app_panel": true
 			},
 			"resources": {
@@ -109,7 +109,7 @@
 				},
 				{
 					"id": "5vAI7ZKTH1Anzm7o",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"source_id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/",
@@ -137,7 +137,7 @@
 			"inputs": [
 				{
 					"id": "ZRhXU7RKwbAKUBzp",
-					"source_id": "aa600124-bcbf-4b4a-84b9-8ecff875b37d",
+					"source_id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
 					"type": "dataset",
 					"name": "ophys_mount",
 					"source_path": "ophys_mount/*.json",
