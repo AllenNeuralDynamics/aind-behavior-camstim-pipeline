@@ -1,4 +1,13 @@
-# 0.1.0 (2026-03-17)
+# [0.2.0](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.1.0...v0.2.0) (2026-03-19)
+
+
+### Features
+
+* aind-ophys-behavior-camstim-qc capsule CO v2 ([#13](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/issues/13)) ([502b1bd](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/commit/502b1bdaf49ce98df05e7ecfeb0b5124af1c2ec2))
+
+
+
+# [0.1.0](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/4da53f72a95cec15d4bf1fa2d4803b2778ab72b8...v0.1.0) (2026-03-17)
 
 
 ### Bug Fixes
