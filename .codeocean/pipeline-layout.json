@@ -72,8 +72,8 @@
 			},
 			"id": "capsule_aind_stimulus_camstim_nwb_4",
 			"position": {
-				"x": -38.29519383866809,
-				"y": 616.4749045650972
+				"x": -118.92665451282538,
+				"y": 532.8007472617263
 			},
 			"selected": true,
 			"type": "capsule"
@@ -108,8 +108,8 @@
 			},
 			"id": "capsule_aind_licks_rewards_nwb_6",
 			"position": {
-				"x": 1.6666666666666998,
-				"y": 825
+				"x": -78.9647940074906,
+				"y": 741.3258426966291
 			},
 			"selected": true,
 			"type": "capsule"
@@ -120,8 +120,8 @@
 			},
 			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
 			"position": {
-				"x": 614.0066651804843,
-				"y": 227.75408520963853
+				"x": 533.375204506327,
+				"y": 144.0799279062677
 			},
 			"selected": true,
 			"type": "capsule"
@@ -135,5 +135,10 @@
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1761090387604
+	"timestamp": 1774566716310,
+	"viewport": {
+		"x": 290.5687104835189,
+		"y": 167.87740029542095,
+		"zoom": 0.6573116691285081
+	}
 }
