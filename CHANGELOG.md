@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.2.0...v0.2.1) (2026-03-27)
+
+
+### Bug Fixes
+
+* edit layout and upgrade running capsule to v10 ([40e76d6](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/commit/40e76d6cebdf4b551cdf25426faccc3d25bd731e))
+
+
+
 # [0.2.0](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.1.0...v0.2.0) (2026-03-19)
 
 
