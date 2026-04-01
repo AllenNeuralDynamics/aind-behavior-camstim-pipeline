@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.2.2...v0.2.3) (2026-04-01)
+
+
+### Bug Fixes
+
+* correct logic for trimming up to 3 stimulus frames ([95e912d](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/commit/95e912d2839050302358ef24301eb9503c362b4d))
+
+
+
 ## [0.2.2](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.2.1...v0.2.2) (2026-04-01)
 
 
