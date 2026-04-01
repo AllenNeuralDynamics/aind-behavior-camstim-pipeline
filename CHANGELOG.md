@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.2.1...v0.2.2) (2026-04-01)
+
+
+### Bug Fixes
+
+* update aind-running-speed-nwb to trim up to 3 stimulus frames to match wheel events. ([268c125](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/commit/268c1257d2e45b503184e797e169b48d4fa84cbc))
+
+
+
 ## [0.2.1](https://github.com/AllenNeuralDynamics/aind-behavior-camstim-pipeline/compare/v0.2.0...v0.2.1) (2026-03-27)
 
 
