@@ -1,0 +1,144 @@
+{
+	"edges": [
+		{
+			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "capsule_aind_running_speed_nwb_3",
+			"target": "capsule_aind_stimulus_camstim_nwb_4"
+		},
+		{
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_running_speed_nwb_3",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"target": "capsule_aind_running_speed_nwb_3"
+		},
+		{
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_stimulus_camstim_nwb_4",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"target": "capsule_aind_stimulus_camstim_nwb_4"
+		},
+		{
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_ophys_camstim_behavior_qc_5",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"target": "capsule_aind_ophys_camstim_behavior_qc_5"
+		},
+		{
+			"id": "xy-edge__capsule_aind_ophys_camstim_behavior_qc_5-results",
+			"source": "capsule_aind_ophys_camstim_behavior_qc_5",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_stimulus_camstim_nwb_4-capsule_aind_licks_rewards_nwb_6",
+			"source": "capsule_aind_stimulus_camstim_nwb_4",
+			"target": "capsule_aind_licks_rewards_nwb_6"
+		},
+		{
+			"id": "xy-edge__capsule_aind_licks_rewards_nwb_6-results",
+			"source": "capsule_aind_licks_rewards_nwb_6",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_licks_rewards_nwb_6",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"target": "capsule_aind_licks_rewards_nwb_6"
+		},
+		{
+			"id": "xy-edge__capsule_aind_pipeline_processing_metadata_aggregator_7-results",
+			"source": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_running_speed_nwb_3-capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"source": "capsule_aind_running_speed_nwb_3",
+			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
+		},
+		{
+			"id": "xy-edge__0603b645-d3f9-4ba6-b3cf-13998ecf52ce-capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"source": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"target": "capsule_aind_pipeline_processing_metadata_aggregator_7"
+		}
+	],
+	"nodes": [
+		{
+			"id": "results",
+			"position": {
+				"x": 436.66666666666663,
+				"y": 1144
+			},
+			"selected": false,
+			"type": "results"
+		},
+		{
+			"data": {
+				"capsule_id": "b6908082-5b36-4e64-91d2-1b960d93a31d"
+			},
+			"id": "capsule_aind_stimulus_camstim_nwb_4",
+			"position": {
+				"x": -118.92665451282538,
+				"y": 532.8007472617263
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "d51df783-d892-4304-a129-238a9baea72a"
+			},
+			"id": "capsule_aind_pipeline_processing_metadata_aggregator_7",
+			"position": {
+				"x": -240.00000000000006,
+				"y": 870
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "06b256c7-4869-40ab-82c1-3c74bff19009"
+			},
+			"id": "capsule_aind_running_speed_nwb_3",
+			"position": {
+				"x": -151.4322518301224,
+				"y": 232.13542839069174
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "a1a6795a-6f4c-4311-87f8-53e93bc90fb5"
+			},
+			"id": "capsule_aind_licks_rewards_nwb_6",
+			"position": {
+				"x": -78.9647940074906,
+				"y": 741.3258426966291
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "b8993607-57ed-4cbe-8b18-a0523228410f"
+			},
+			"id": "capsule_aind_ophys_camstim_behavior_qc_5",
+			"position": {
+				"x": 533.375204506327,
+				"y": 144.0799279062677
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"id": "0603b645-d3f9-4ba6-b3cf-13998ecf52ce",
+			"position": {
+				"x": 300,
+				"y": -120
+			},
+			"type": "dataset"
+		}
+	],
+	"timestamp": 1774566716310,
+	"viewport": {
+		"x": 290.5687104835189,
+		"y": 167.87740029542095,
+		"zoom": 0.6573116691285081
+	}
+}
