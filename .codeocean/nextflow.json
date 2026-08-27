@@ -65,7 +65,7 @@
 				"id": "b8993607-57ed-4cbe-8b18-a0523228410f",
 				"name": "aind-ophys-camstim-behavior-qc",
 				"slug": "2806581",
-				"version": 2
+				"version": 3
 			},
 			"resources": {
 				"cpus": 1,

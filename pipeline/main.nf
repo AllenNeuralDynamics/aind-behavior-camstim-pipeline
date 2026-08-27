@@ -111,7 +111,7 @@ process capsule_aind_stimulus_camstim_nwb_4 {
 // capsule - aind-ophys-camstim-behavior-qc
 process capsule_aind_ophys_camstim_behavior_qc_5 {
 	tag 'capsule-2806581'
-	container "$REGISTRY_HOST/published/b8993607-57ed-4cbe-8b18-a0523228410f:v2"
+	container "$REGISTRY_HOST/published/b8993607-57ed-4cbe-8b18-a0523228410f:v3"
 
 	cpus 1
 	memory '7.5 GB'
@@ -140,9 +140,9 @@ process capsule_aind_ophys_camstim_behavior_qc_5 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2806581.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v3.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2806581.git" capsule-repo
 	else
-		git -c credential.helper= clone --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2806581.git" capsule-repo
+		git -c credential.helper= clone --branch v3.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2806581.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
