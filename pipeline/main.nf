@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:6941934f9a6cf5de062c3f981a5d82b52697f60d61535cca5feb00a7fa0c0786
+// hash:sha256:93454ac46a18f4e2d8f20710c5b08d1224b3d14337c899635239d9c71a352dd6
 
 nextflow.enable.dsl = 1
 
